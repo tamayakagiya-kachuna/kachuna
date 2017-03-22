@@ -1,0 +1,168 @@
+/* My code */
+
+.flex_grid {
+}
+
+.col-2 {
+    display: flex;
+    height: 100vh;
+}
+
+.col-1 {
+}
+
+#ai_form {
+    width: 250px;
+    height: 100%;
+}
+
+.tooltip {
+    display: flex;
+    width: 100%;
+}
+
+.tooltip .tooltiptext {
+    display: flex;
+    background-color: #c5f4ff;
+    color: #005265;
+    position: relative;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    z-index: 1;
+    bottom: -20%;
+    left: 30%;
+    margin-left: -20%;
+    height: 10%;
+}
+
+.tooltip .tooltiptext::after {
+    display: flex;
+    content: " ";
+    top: 40%;
+    right: 100%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #c5f4ff transparent transparent;
+    position: absolute;
+}
+
+#form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #FFD99C;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 3px;
+    margin-left: 10em;
+}
+
+#name_form {
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#mail_form {
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#comment_form {
+    width: 100%;
+    margin: 15px 0 4em 0;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+input:focus, textarea:focus {
+    outline-style: none;
+    background-color: #d1f2ff;
+}
+
+.button_form {
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #F4837D;
+    border-radius: 1em;
+    cursor: pointer;
+    padding: 0.7em;
+}
+
+.button_form:focus {
+    background-color: #F4837D;
+}
+
+#submit_button {
+    margin-bottom: 7em;
+}
+
+@media only screen and (max-width: 768px) {
+    .col-2 {
+        flex-direction: column;
+        height: 100%;
+        margin-top: 3.0em;
+    }
+    
+    #form {
+        padding: 0px;
+        margin: 0;
+        margin-bottom: 0.2em;
+    }
+    
+    #ai_form {
+        width: 38vw;
+        height: 120vh;
+        margin: 0 auto 0 auto;
+    }
+
+    .tooltip {
+        display: flex;
+        width: 100%;
+    }
+    
+    .tooltip .tooltiptext {
+        display: flex;
+        flex-direction: column;
+        background-color: #c5f4ff;
+        height: 20vh;
+        width: 20%;
+        bottom: 1%;
+        top: 32%;
+        left: -25%;
+        margin-left:0;
+    }
+    
+    .tooltip .tooltiptext::after {
+        display: flex;
+        border-color: transparent #c5f4ff transparent transparent;
+        top: 40%;
+        right: 100%;
+        margin-left: -5px;
+    }
+    
+    #submit_button {
+        margin-bottom: 1em;
+    }
+    
+    #name_form {
+        margin: 0;
+    }
+
+    #mail_form {
+        margin: 0 0;
+    }
+
+    #comment_form {
+        width: 100%;
+        margin: 0 0 1em 0;
+    }
+}

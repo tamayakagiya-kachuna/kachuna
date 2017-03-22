@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+    <head>
+        <title>Kachuna Offical Website</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Kachuna Official Website">
+        <meta name="keywords" content="VN, Visual Novel, Otome, Kachuna">
+        <meta name="author" content="Renan Martineli de Paula">
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="stylesheet" href="css/contact.css"/>
+        <link rel="stylesheet" href="css/web_fonts/web_fonts.css"/>
+    </head>
+    <body>
+        <div class="flex_grid">
+            <div class="col-1">
+                <div class="dropdown">
+                    <button class="dropbtn">MENU</button>
+                    <div class="dropdown-content">
+                        <nav class="navigation">
+                            <ul>
+                                <li><a class="active" href="index.html">INTRODUCTION</a></li>
+                                <li><a href="characters.html">CHARACTERS</a></li>
+                                <li><a href="project_status.html">PROJECT STATUS</a></li>
+                                <li><a href="gallery.html">GALLERY</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                
+                <nav class="navigation" id="normal_nav">
+                    <img class="tamaya_logo" src="images/tk_logo.png" alt="Tamaya Logo"/>
+                    <ul>
+                        <li><a href="index.html">INTRODUCTION</a></li>
+                        <li><a href="characters.html">CHARACTERS</a></li>
+                        <li><a href="project_status.html">PROJECT STATUS</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a class="active" href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-2">
+                <div class="tooltip">
+                    <img id="ai_form" src="images/ai1_norm1.png" alt="Ai Form"/>
+                    <span class="tooltiptext">Hello...if you have any question, please fill in this form.</span>
+                </div>
+
+
+                    <form id="form" action="mailto:renanmartineli@hotmail.com" method="post" enctype="text/plain">
+                        Name:<br/>
+                        <input id="name_form" type="text" name="name"/><br/>
+                        E-mail:<br/>
+                        <input id="mail_form" type="text" name="mail"/><br/>
+                        Comment:<br/>
+                        <textarea id="comment_form" type="textarea" name="comment" rows="10" cols="50"></textarea>
+                        <input class="button_form" id="submit_button" type="submit" value="Send"/>
+                        <input class="button_form" id="reset_button" type="reset" value="Reset" />
+                    </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+/* My Code */
+
+.col-2 {
+    display: flex;
+}
+
+div.gallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+div.gallery img:hover {
+    border: 2px solid #F4837D;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .col-2 {
+        margin-top: 3.0em;
+    }
+}
