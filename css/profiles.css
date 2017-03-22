@@ -1,36 +1,36 @@
 /* My code */
 
 #jun_profile_bg {
-    background: url("/images/jun_profile.png") no-repeat center fixed;
+    background: url("images/jun_profile.png") no-repeat center fixed;
     background-size: 100% 100%;
 }
 
 #ai_profile_bg {
-    background: url("/images/ai_profile.png") no-repeat center fixed;
+    background: url("images/ai_profile.png") no-repeat center fixed;
     background-size: 100% 100%;
 }
 
 #tsukimi_profile_bg {
-    background: url("/images/tsumiki_profile.png") no-repeat center fixed;
+    background: url("images/tsumiki_profile.png") no-repeat center fixed;
     background-size: 100% 100%;
 }
 
 #yui_profile_bg {
-    background: url("/images/yui_profile.png") no-repeat center fixed;
+    background: url("images/yui_profile.png") no-repeat center fixed;
     background-size: 100% 100%;
 }
 
 #megumi_profile_bg {
-    background: url("/images/megumi_profile.png") no-repeat center fixed;
+    background: url("images/megumi_profile.png") no-repeat center fixed;
     background-size: 100% 100%;
 }
 
 #shiro_profile_bg {
-    background: url("/images/shiro_profile.png") no-repeat center fixed;
+    background: url("images/shiro_profile.png") no-repeat center fixed;
     background-size: 100% 100%;
 }
 
 #takahiro_profile_bg {
-    background: url("/images/takahiro_profile.png") no-repeat center fixed;
+    background: url("images/takahiro_profile.png") no-repeat center fixed;
     background-size: 100% 100%;
 }
