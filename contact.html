@@ -45,16 +45,14 @@
                     <img id="ai_form" src="images/ai1_norm1.png" alt="Ai Form"/>
                     <img id="speech_bubble" src="images/speech.png" alt="speech bubble"/>
                 </div>
-                    <form id="form" action="mailto:renanmartineli@hotmail.com" method="post" enctype="text/plain">
-                        Name:<br/>
-                        <input id="name_form" type="text" name="name"/><br/>
-                        E-mail:<br/>
-                        <input id="mail_form" type="text" name="mail"/><br/>
-                        Comment:<br/>
-                        <textarea id="comment_form" type="textarea" name="comment" rows="10" cols="50"></textarea>
-                        <input class="button_form" id="submit_button" type="submit" value="Send"/>
-                        <input class="button_form" id="reset_button" type="reset" value="Reset" />
-                    </form>
+                <form id="form" action="https://formspree.io/renanmartineli@hotmail.com" method="post" enctype="text/plain">
+                    <input class="field_form" id="name_form" type="text" name="name" placeholder="Name" required="required"/><br/>
+                    <input class="field_form" id="mail_form" type="text" name="email" placeholder="E-mail" required="required"/><br/>
+                    <input class="field_form" id="subject_form" type="text" name="subject" placeholder="Subject" required="required"/><br/>
+                    <textarea class="field_form" id="comment_form" type="textarea" name="comment" placeholder="Comment" rows="10" cols="50" required="required"></textarea>
+                    <input class="button_form" id="submit_button" type="submit" value="Send"/>
+                    <input class="button_form" id="reset_button" type="reset" value="Reset" />
+                </form>
             </div>
         </div>
     </body>
