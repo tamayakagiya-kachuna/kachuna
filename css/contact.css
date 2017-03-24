@@ -1,51 +1,30 @@
 /* My code */
 
-.flex_grid {
-}
-
 .col-2 {
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    height: 100%;
 }
 
 .col-1 {
 }
 
+.speech {
+    display: flex;
+    flex-direction: row;
+}
+
+#speech_bubble {
+    position: relative;
+    height: 1%;
+    top: 1em;
+    right: 10%;
+}
+
 #ai_form {
     width: 250px;
     height: 100%;
-}
-
-.tooltip {
-    display: flex;
-    width: 100%;
-}
-
-.tooltip .tooltiptext {
-    display: flex;
-    background-color: #c5f4ff;
-    color: #005265;
-    position: relative;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    z-index: 1;
-    bottom: -20%;
-    left: 30%;
-    margin-left: -20%;
-    height: 10%;
-}
-
-.tooltip .tooltiptext::after {
-    display: flex;
-    content: " ";
-    top: 40%;
-    right: 100%;
-    margin-left: -5px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent #c5f4ff transparent transparent;
-    position: absolute;
+    margin-left: 40%;
 }
 
 #form {
@@ -57,7 +36,6 @@
     color: #FFFFFF;
     padding: 15px;
     border-radius: 3px;
-    margin-left: 10em;
 }
 
 #name_form {
@@ -118,35 +96,20 @@ input:focus, textarea:focus {
         margin-bottom: 0.2em;
     }
     
-    #ai_form {
-        width: 38vw;
-        height: 120vh;
-        margin: 0 auto 0 auto;
-    }
-
-    .tooltip {
-        display: flex;
-        width: 100%;
-    }
-    
-    .tooltip .tooltiptext {
-        display: flex;
+    .speech {
         flex-direction: column;
-        background-color: #c5f4ff;
-        height: 20vh;
-        width: 20%;
-        bottom: 1%;
-        top: 32%;
-        left: -25%;
-        margin-left:0;
+        flex-wrap: wrap;
     }
     
-    .tooltip .tooltiptext::after {
-        display: flex;
-        border-color: transparent #c5f4ff transparent transparent;
-        top: 40%;
-        right: 100%;
-        margin-left: -5px;
+    #ai_form {
+        margin: auto;
+        margin-left: 0;
+        order: 2;
+    }
+    
+    #speech_bubble {
+        position: static;
+        order: 1;
     }
     
     #submit_button {
